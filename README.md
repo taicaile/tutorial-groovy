@@ -83,7 +83,7 @@ for(int i=0; i<firstNames.size(); i++){
 }
 ```
 
-## Working with Classes
+## Class
 
 ```groovy
 class User{
