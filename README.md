@@ -119,3 +119,13 @@ for(int i=0; i<firstNames.size(); i++){
 ```bash
 brew install eclipse-java
 ```
+
+## Documentation
+
+Syntax
+
+<https://groovy-lang.org/syntax.html>
+
+Operators
+
+<https://groovy-lang.org/operators.html>
