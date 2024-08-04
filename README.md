@@ -38,6 +38,8 @@ println name + " is a programmer? " + isProgrammer.toString().capitalize()
 println name + " wishes his salary was \$" + String.format("%.2f", salary)
 ```
 
+## Control Structures
+
 For loop,
 
 ```groovy
