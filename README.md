@@ -13,7 +13,7 @@ def x = 5
 x += 5
 println x
 
-assert x==11: "Valeo was not eleven"
+assert x==11: "Value was not eleven"
 ```
 
 Groovy is an optionally typed language.
@@ -110,4 +110,12 @@ for(int i=0; i<firstNames.size(); i++){
     println("UserName is ${u.UserName()}");
     //  printCredential(getUserName(firstNames[i], lastNames[i]))
 }
+```
+
+## IDE & Compiler Installation
+
+### macOS
+
+```bash
+brew install eclipse-java
 ```
