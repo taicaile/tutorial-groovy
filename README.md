@@ -114,6 +114,50 @@ for(int i=0; i<firstNames.size(); i++){
 }
 ```
 
+## Inheritance
+
+```groovy
+abstract class User{
+    String lastName;
+    String firstName;
+
+    public String UserName(){
+        return getUserName(this.firstName, this.lastName);
+    }
+
+    private String getUserName(String firstName, String lastName){
+        return firstName.substring(0,1).toLowerCase() + lastName.toLowerCase();
+    }
+}
+
+class Artist extends User {
+    public String[] Songs;
+}
+
+class Producer extends User{
+    public void Produce(){
+        println("Album Done.")
+    };
+}
+
+User[] users = [
+    new Artist(firstName: "Bob", lastName: "Dylan", Songs: ["It's alright Ma"]),
+    new Producer(firstName: "Jeff", lastName: "Lynne")
+]
+
+users.each{user ->
+
+    if(user instanceof Artist){
+        println("UserName is ${user.UserName()}")
+        user.Songs.each{
+            println("${it}");
+        }
+    }else{
+        user.Produce();
+    }
+}
+```
+
 ## IDE & Compiler Installation
 
 ### macOS
